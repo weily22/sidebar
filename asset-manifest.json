@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sidebar/home/static/css/main.5de6663a.chunk.css",
+    "main.js": "/sidebar/home/static/js/main.7e14b751.chunk.js",
+    "main.js.map": "/sidebar/home/static/js/main.7e14b751.chunk.js.map",
+    "runtime-main.js": "/sidebar/home/static/js/runtime-main.216356bd.js",
+    "runtime-main.js.map": "/sidebar/home/static/js/runtime-main.216356bd.js.map",
+    "static/js/2.380e2905.chunk.js": "/sidebar/home/static/js/2.380e2905.chunk.js",
+    "static/js/2.380e2905.chunk.js.map": "/sidebar/home/static/js/2.380e2905.chunk.js.map",
+    "index.html": "/sidebar/home/index.html",
+    "precache-manifest.5ce3dd1a76d580c279a73c40d08d95a4.js": "/sidebar/home/precache-manifest.5ce3dd1a76d580c279a73c40d08d95a4.js",
+    "service-worker.js": "/sidebar/home/service-worker.js",
+    "static/css/main.5de6663a.chunk.css.map": "/sidebar/home/static/css/main.5de6663a.chunk.css.map",
+    "static/media/Home.scss": "/sidebar/home/static/media/Politica-Regular.ffcc816a.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.216356bd.js",
+    "static/js/2.380e2905.chunk.js",
+    "static/css/main.5de6663a.chunk.css",
+    "static/js/main.7e14b751.chunk.js"
+  ]
+}
