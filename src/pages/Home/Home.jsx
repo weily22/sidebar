@@ -22,6 +22,9 @@ class Home extends Component {
       <div className="sidebar">
         <div className="topNav">
           <a href="">小米江</a>
+          <div className="menu">
+            <a href="?art1">React生命周期有哪些？</a>
+          </div>
         </div>
         <div className="content">
           <div className="left-stick">
