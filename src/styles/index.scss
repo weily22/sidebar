@@ -1,4 +1,4 @@
-@import url('//at.alicdn.com/t/font_1414445_ho4blxpz3sf.css');
+@import url('//at.alicdn.com/t/font_1414445_ff50setv6g7.css');
 @import "variables";
 @import "base";
 @font-face {
@@ -28,3 +28,23 @@
 .fz-15 {font-size: 15px;}
 .fz-13 {font-size: 13px;}
 .fz-12 {font-size: 12px;}
+
+@keyframes v_shake {
+  0% { transform:rotate(-12deg) }
+  5.16129% { transform:rotate(12deg) }
+  6.45161% { transform:rotate(24deg) }
+  11.6129% { transform:rotate(-24deg) }
+  12.90323% { transform:rotate(-24deg) }
+  18.06451% { transform:rotate(24deg) }
+  19.35484% { transform:rotate(24deg) }
+  24.51613% { transform:rotate(-24deg) }
+  25.80645% { transform:rotate(-24deg) }
+  30.96774% { transform:rotate(24deg) }
+  32.25807% { transform:rotate(24deg) }
+  37.41935% { transform:rotate(-24deg) }
+  38.70968% { transform:rotate(-24deg) }
+  43.87097% { transform:rotate(24deg) }
+  48.3871% { transform:rotate(0deg) }
+  100% { transform:rotate(0deg) }
+}
+

@@ -13,6 +13,9 @@ class Home extends Component {
       time: `${h < 10 ? '0' + h : h}: ${m < 10 ? '0' + m : m}`
     }
   };
+  setDot() {
+
+  }
   render() {
     const { year, md, time } = this.dateFormat();
     return (
@@ -40,6 +43,7 @@ class Home extends Component {
           <div className="content_article">
             <Article/>
           </div>
+          <div className="heart-beat"/>
         </div>
       </div>
     )
