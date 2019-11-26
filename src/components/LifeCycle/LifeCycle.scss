@@ -1,0 +1,32 @@
+.life_cycle {
+  .cycle_15,.cycle_16 {
+    display: flex;
+    > div {
+      padding: 15px;
+      border: 1px dashed #ccc;
+      margin-top: 25px;
+      margin-right: 25px;
+      text-align: center;
+      .box {
+        padding: 5px 10px;
+        margin: 10px 0;
+        background-color: #ccc;
+        border-radius: .2em;
+      }
+      .both_div {
+        display: flex;
+        .left {
+          margin-right: 10px;
+        }
+        .right {
+          margin-left: 10px;
+          .ph {
+            padding: 5px 10px;
+            margin: 10px 0;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

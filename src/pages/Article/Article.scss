@@ -1,0 +1,13 @@
+@import 'src/styles/index.scss';
+
+.mi-article {
+  font-family: 'SansHans';
+  .article_title {
+    padding: 15px 0;
+    font-weight: normal;
+    .gh_titleicon {
+      color: #f00;
+      margin-right: 5px;
+    }
+  }
+}
