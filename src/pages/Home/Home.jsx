@@ -13,13 +13,13 @@ class Home extends Component {
       time: `${h < 10 ? '0' + h : h}: ${m < 10 ? '0' + m : m}`
     }
   };
-  setDot() {
-
+  waiting() {
+    alert('待开发')
   }
   render() {
     const { year, md, time } = this.dateFormat();
     return (
-      <div className="sidebar">
+      <div className="source">
         <div className="topNav">
           <a href="">小米江</a>
           <div className="menu">
@@ -48,6 +48,12 @@ class Home extends Component {
           </div>
           <div className="heart-beat"/>
         </div>
+        <footer>
+          <div className="foot_in">
+            <textarea className="in_area" placeholder="写下你的评论..."/>
+            <i onClick={this.waiting} className="iconfont gh_zan"/>
+          </div>
+        </footer>
       </div>
     )
   }

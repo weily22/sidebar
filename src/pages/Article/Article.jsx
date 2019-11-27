@@ -6,7 +6,6 @@ class Article extends Component {
     return (
       <div className="mi-article">
         <LifeCycle />
-        {/*<div className="pagination_right">分页</div>*/}
       </div>
     )
   }
