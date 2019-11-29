@@ -32,11 +32,12 @@
   }
   .content {
     width: 1200px;
-    margin: 60px auto 40px;
+    margin: 60px auto;
     position: relative;
     box-shadow: 3px 0 3px -5px rgba(0,0,0,.2);
     background-color: #fff;
     min-width: 1000px;
+    padding-top: 10px;
     .heart-beat {
       position: absolute;
       right: 0;

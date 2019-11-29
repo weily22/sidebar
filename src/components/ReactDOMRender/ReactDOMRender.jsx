@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import Markdown from 'react-remarkable';
+import MarkDownBox from './../MarkDownBox';
 
 class ReactDOMRender extends Component {
+  state = {
+    value: 'Type some *markdown* here!',
+  };
   render() {
     return (
       <div className="react_dom_render">
-        <Markdown>{`
-          ## Reasons React is great
-
-
-          1. Server-side rendering
-          2. This totally works:
-
-          <SomeOtherAmazingComponent />
-
-          Pretty neat!
-        `}</Markdown>
+        <MarkDownBox>
+          > Experience real-time editing with Remarkable!
+          ```js
+          function a() {
+            console.log('a')
+          }
+          ```
+        </MarkDownBox>
       </div>
     )
   }
