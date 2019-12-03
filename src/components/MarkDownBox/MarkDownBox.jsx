@@ -1,4 +1,4 @@
-import React, { Component, createRef, createElement } from 'react';
+import React, { Component, createRef, createElement, Children } from 'react';
 import { Remarkable } from 'remarkable';
 import HighLG from 'highlight.js';
 class MarkDownBox extends Component {
@@ -9,7 +9,7 @@ class MarkDownBox extends Component {
   }
   getRawMarkup(content) {
     const md = new Remarkable('full', {
-      html: false,          // Enable HTML tags in source
+      html: true,          // Enable HTML tags in source
       xhtmlOut: true,
       breaks: false,
       langPrefix: 'language-',
@@ -34,9 +34,29 @@ class MarkDownBox extends Component {
       __html: md.render(content)
     };
   }
+
+  getChildren() {
+    const { children = '' } = this.props;
+    console.log('children', this.props.children)
+    const childArr = [];
+    Children.map(children, function (child, index) {
+      if (typeof child === 'object') {
+        const { type } = child;
+        if (['br'].indexOf(type)) {
+          childArr.push(`<${type}/>`)
+        }
+      } else {
+        childArr.push(child)
+      }
+      console.log('child', child)
+      console.log('index', index)
+    })
+
+  }
   render() {
     const { children = '' } = this.props;
     const content = children.toString();
+    this.getChildren()
       return (
         <div className="markdown_box"
           dangerouslySetInnerHTML={this.getRawMarkup(content)}>

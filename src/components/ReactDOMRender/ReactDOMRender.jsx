@@ -9,12 +9,9 @@ class ReactDOMRender extends Component {
     return (
       <div className="react_dom_render">
         <MarkDownBox>
-          > Experience real-time editing with Remarkable!
-          ```js
-          function a() {
-            console.log('a')
-          }
-          ```
+          # this is one comment <br/>
+          ## 32
+          ==Marked text==
         </MarkDownBox>
       </div>
     )
