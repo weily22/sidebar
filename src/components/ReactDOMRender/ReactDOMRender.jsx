@@ -8,11 +8,12 @@ class ReactDOMRender extends Component {
   render() {
     return (
       <div className="react_dom_render">
+        <h2>ReactDOM.render 干了什么</h2>
         <MarkDownBox>
-          # this is one comment <br/>
-          ## 32
-          ==Marked text==
+          > *来源于ReactDOMLegacy.js*<br/>
+          `render(element, container, callback) `
         </MarkDownBox>
+        <p>调用render 返回一个legacyRenderSubtreeIntoContainer</p>
       </div>
     )
   }

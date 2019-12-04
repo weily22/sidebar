@@ -2,9 +2,6 @@ import React, { Component, createRef, createElement, Children } from 'react';
 import { Remarkable } from 'remarkable';
 import HighLG from 'highlight.js';
 class MarkDownBox extends Component {
-  state = {
-    content: 'Type some *markdown* here!'
-  };
   componentDidMount () {
   }
   getRawMarkup(content) {
@@ -42,26 +39,24 @@ class MarkDownBox extends Component {
     Children.map(children, function (child, index) {
       if (typeof child === 'object') {
         const { type } = child;
-        if (['br'].indexOf(type)) {
+        if (['br'].indexOf(type) > -1) {
           childArr.push(`<${type}/>`)
         }
       } else {
         childArr.push(child)
       }
-      console.log('child', child)
-      console.log('index', index)
-    })
+    });
+    return childArr.join('');
 
   }
   render() {
-    const { children = '' } = this.props;
-    const content = children.toString();
-    this.getChildren()
-      return (
-        <div className="markdown_box"
-          dangerouslySetInnerHTML={this.getRawMarkup(content)}>
-        </div>
-      )
+    // const { children = '' } = this.props;
+    const content = this.getChildren();
+    return (
+      <div className="markdown_box"
+        dangerouslySetInnerHTML={this.getRawMarkup(content)}>
+      </div>
+    )
   }
 }
 
