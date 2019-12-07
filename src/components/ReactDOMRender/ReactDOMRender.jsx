@@ -14,6 +14,7 @@ class ReactDOMRender extends Component {
           `render(element, container, callback) ` <br/>
         </MarkDownBox>
         <p>主要目的：创建ReactRoot</p>
+        <p>根据情况调用root.legacy_renderSubtreeIntoContainer或者root.render</p>
         <p>调用render 返回一个legacyRenderSubtreeIntoContainer</p>
       </div>
     )
