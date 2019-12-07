@@ -3,6 +3,14 @@ import ReactVersion from './../ReactVersion';
 import Article from './../Article';
 
 class Home extends Component {
+  state = {
+    part: '',
+    activePart: 'part1',
+    titleArr: [
+      { title: 'React生命周期有哪些？', type: 'part1' },
+      { title: 'ReactDOM.render 干了什么？', type: 'part2' },
+    ],
+  };
   dateFormat = () => {
     const date = new Date();
     const h = date.getHours();
@@ -16,14 +24,24 @@ class Home extends Component {
   waiting() {
     alert('待开发')
   }
+  JumpTo(where) {
+    this.setState({ part: where, activePart: where });
+  }
   render() {
     const { year, md, time } = this.dateFormat();
+    const { part, titleArr, activePart } = this.state;
     return (
       <div className="source">
         <div className="topNav">
           <a href="">小米江</a>
           <div className="menu">
-            <a href="?art1">React生命周期有哪些？</a>
+            {
+              titleArr.map(({ title, type }, index) => (
+                <span className={activePart === type && 'active'} key={index} onClick={() => this.JumpTo(type)}>{title}</span>
+              ))
+            }
+            {/*<span onClick={() => this.JumpTo('part1')}>React生命周期有哪些？</span>*/}
+            {/*<span onClick={() => this.JumpTo('part2')}>ReactDOM.render 干了什么</span>*/}
           </div>
         </div>
         <div className="content">
@@ -44,7 +62,7 @@ class Home extends Component {
             <div><i className="iconfont gh_comment"/></div>
           </div>
           <div className="content_article">
-            <Article/>
+            <Article part={part}/>
           </div>
           <div className="heart-beat"/>
         </div>
