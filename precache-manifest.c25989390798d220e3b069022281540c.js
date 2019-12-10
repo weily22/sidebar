@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5d66cc9f5130becaa6d36d3c6f9c99e",
+    "revision": "b1927388adf680b589eda5a7c8d72eb1",
     "url": "./index.html"
   },
   {
-    "revision": "26f7014fb21673077fe6",
-    "url": "./static/css/main.aff1660b.chunk.css"
+    "revision": "f0b8bf2ad5f448202060",
+    "url": "./static/css/main.eba117b2.chunk.css"
   },
   {
-    "revision": "ff951fd595c34ec90e6e",
-    "url": "./static/js/2.0da155b5.chunk.js"
+    "revision": "c8dc7ea6a977a6562c05",
+    "url": "./static/js/2.67546c31.chunk.js"
   },
   {
-    "revision": "26f7014fb21673077fe6",
-    "url": "./static/js/main.460c9899.chunk.js"
+    "revision": "f0b8bf2ad5f448202060",
+    "url": "./static/js/main.8d225068.chunk.js"
   },
   {
     "revision": "bdda82fc5a54f4d89ba8",
@@ -38,5 +38,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ffcc816ac0198eacc98cf64200c947e1",
     "url": "./static/media/Politica-Regular.ffcc816a.woff"
+  },
+  {
+    "revision": "2d7016432f6d5ac0ec2741747b0bbfd5",
+    "url": "./static/media/a.2d701643.jpg"
+  },
+  {
+    "revision": "42bcdccb40eef7680fb374cce61609db",
+    "url": "./static/media/b.42bcdccb.jpg"
+  },
+  {
+    "revision": "9b18d9d44892b2e3eb776794f07e2684",
+    "url": "./static/media/b2.9b18d9d4.jpg"
+  },
+  {
+    "revision": "cd3f2c17d2b74e4bd0d8c1c02f04dff4",
+    "url": "./static/media/c.cd3f2c17.jpg"
   }
 ]);
