@@ -3,6 +3,7 @@ import MarkDownBox from './../MarkDownBox';
 import aImg from './../../assets/a.jpg';
 import bImg from './../../assets/b.jpg';
 import b2Img from './../../assets/b2.jpg';
+import cImg from './../../assets/c.jpg';
 
 class ReactDOMRender extends Component {
   state = {
@@ -68,7 +69,7 @@ class ReactDOMRender extends Component {
             <p>3. 创建root并markContainerAsRoot</p>
             <p>4. return root</p>
             <p>创建root：</p>
-            <p>createContainer(containerInfo, tag, hydrate, hydrationCallbacks)<span className="annotate">// 参数：Root, LegacyRoot = 0, false, null</span></p>
+            <p>const root = createContainer(containerInfo, tag, hydrate, hydrationCallbacks)<span className="annotate">// 参数：Root, LegacyRoot = 0, false, null</span></p>
             <p>
               <i className="iconfont gh_jiantou_yemian_xiangyou"/>
               return createFiberRoot(containerInfo, tag, hydrate, hydrationCallbacks)
@@ -96,9 +97,18 @@ class ReactDOMRender extends Component {
             <p>markContainerAsRoot(hostRoot, node): <span className="annotate">// 参数： fiberRoot.current，Root;</span></p>
             <p><i className="iconfont gh_jiantou_yemian_xiangyou"/>node[internalContainerInstanceKey] = hostRoot;</p>
             <p>const internalContainerInstanceKey = '__reactContainere$' + randomKey;</p>
+            <p>最后的最后，return root</p>
           </li>
-          <li>①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳</li>
-          {/*<li></li>*/}
+          {/*<li>①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳</li>*/}
+          <li>
+            <i className="iconfont gh_arrow_r" />getPublicRootInstance(container) <span className="annotate">// 参数： fiberRoot</span>
+            <p>分析源码</p>
+            <p><img className="getPublicRootInstance_img" src={cImg} alt=""/></p>
+            <p>从源码中可以看到：</p>
+            <p>containerFiber即上面的FiberNode的实例</p>
+            <p>FiberNode.child 默认为null</p>
+            <p>所以最终返回null</p>
+          </li>
         </ul>
       </div>
     )
