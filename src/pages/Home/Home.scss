@@ -40,13 +40,14 @@
     }
   }
   .content {
-    width: 1200px;
     margin: 60px auto;
     position: relative;
     box-shadow: 3px 0 3px -5px rgba(0,0,0,.2);
     background-color: #fff;
-    min-width: 1000px;
-    padding-top: 10px;
+    padding: 10px 30px;
+    width: 80%;
+    min-width: 998px;
+    height: 100%;
     .heart-beat {
       position: absolute;
       right: 0;
@@ -69,15 +70,20 @@
         transition: all .5s;
       }
     }
-
+    .left_bar {
+      position: absolute;
+      left: -80px;
+      width: 80px;
+      top: 80px;
+      padding-right: 30px;
+    }
     .left-stick {
       font-family: Politica;
       width: 80px;
-      top: 80px;
+      padding-right: 30px;
       position: fixed;
       text-align: center;
       font-size: 12px;
-      margin-left: -110px;
       >div {
         margin-bottom: 5px;
         position: relative;
@@ -185,15 +191,14 @@
         position: absolute;
         content: "";
         display: block;
-        border-right: 1px solid #eee;
+        border-right: 1px solid #c5eafb;
         width: 1px;
         height: 630px;
         top: 10px;
-        right: -30px;
+        right: 0;
       }
     }
     .content_article {
-      margin-left: 60px;
       height: 100%;
       overflow: auto;
     }

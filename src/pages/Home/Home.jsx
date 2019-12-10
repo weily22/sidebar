@@ -40,26 +40,26 @@ class Home extends Component {
                 <span className={activePart === type && 'active'} key={index} onClick={() => this.JumpTo(type)}>{title}</span>
               ))
             }
-            {/*<span onClick={() => this.JumpTo('part1')}>React生命周期有哪些？</span>*/}
-            {/*<span onClick={() => this.JumpTo('part2')}>ReactDOM.render 干了什么</span>*/}
           </div>
         </div>
         <div className="content">
-          <div className="left-stick">
-            <div className="year through"><span>{year}</span></div>
-            <div className="md"><span>{md}</span></div>
-            <div className="time"><span>{time}</span></div>
-            <div className="react through"><span>React版本</span></div>
-            <div className="version"><span>{ReactVersion}</span></div>
-            <div className="share through"><span>分享</span></div>
-            <div className="share_bar">
-              <a href=""><i className="iconfont gh_wechat"/></a>
-              <a href=""><i className="iconfont gh_qq"/></a>
-              <a href=""><i className="iconfont gh_pengyouquan"/></a>
-              <a href=""><i className="iconfont gh_sina"/></a>
+          <div className="left_bar">
+            <div className="left-stick">
+              <div className="year through"><span>{year}</span></div>
+              <div className="md"><span>{md}</span></div>
+              <div className="time"><span>{time}</span></div>
+              <div className="react through"><span>React版本</span></div>
+              <div className="version"><span>{ReactVersion}</span></div>
+              <div className="share through"><span>分享</span></div>
+              <div className="share_bar">
+                <a href=""><i className="iconfont gh_wechat"/></a>
+                <a href=""><i className="iconfont gh_qq"/></a>
+                <a href=""><i className="iconfont gh_pengyouquan"/></a>
+                <a href=""><i className="iconfont gh_sina"/></a>
+              </div>
+              <div className="comment through"><span>评论</span></div>
+              <div><i className="iconfont gh_comment"/></div>
             </div>
-            <div className="comment through"><span>评论</span></div>
-            <div><i className="iconfont gh_comment"/></div>
           </div>
           <div className="content_article">
             <Article part={part}/>
