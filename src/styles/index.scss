@@ -3,19 +3,19 @@
 @import "base";
 @font-face {
   font-family: 'Politica';
-  src: url('./../assets/fonts/Politica-Regular.woff') format('woff'), url('./../assets/fonts/Politica-Regular.ttf')  format('truetype');
+  src: url('./../assets/fonts/Politica-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SansHans';
-  src: url('./../assets/fonts/NotoSansHans-Medium.woff?#iefix') format('embedded-opentype'), url('./../assets/fonts/NotoSansHans-Medium.ttf')  format('truetype');
+  src: url('./../assets/fonts/NotoSansHans-Medium.woff?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Monaco';
-  src: url('./../assets/fonts/Monaco.ttf')  format('truetype');
+  src: url('./../assets/fonts/monaco.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
