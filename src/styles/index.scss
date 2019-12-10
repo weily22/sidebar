@@ -1,4 +1,4 @@
-@import url('//at.alicdn.com/t/font_1414445_fijibkok0wm.css');
+@import url('//at.alicdn.com/t/font_1414445_ipqjvrrzsml.css');
 @import "variables";
 @import "base";
 @font-face {
@@ -13,21 +13,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
-.fz-26 {font-size: 26px;}
-.fz-25 {font-size: 25px;}
-.fz-24 {font-size: 24px;}
-.fz-23 {font-size: 23px;}
-.fz-22 {font-size: 22px;}
-.fz-21 {font-size: 21px;}
-.fz-20 {font-size: 20px;}
-.fz-19 {font-size: 19px;}
-.fz-18 {font-size: 18px;}
-.fz-17 {font-size: 17px;}
-.fz-16 {font-size: 16px;}
-.fz-15 {font-size: 15px;}
-.fz-13 {font-size: 13px;}
-.fz-12 {font-size: 12px;}
+@font-face {
+  font-family: 'Monaco';
+  src: url('./../assets/fonts/Monaco.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @keyframes v_shake {
   0% { transform:rotate(-12deg) }

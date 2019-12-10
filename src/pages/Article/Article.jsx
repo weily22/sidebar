@@ -12,7 +12,7 @@ class Article extends Component {
       case 'part2':
         return <ReactDOMRender />;
       default:
-        return <LifeCycle />;
+        return <ReactDOMRender />;
     }
   }
   render() {
