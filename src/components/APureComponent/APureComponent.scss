@@ -1,0 +1,47 @@
+.a_pure_component {
+    code {
+        font-family: 'Monaco';
+        padding: 10px 15px;
+        width: 660px;
+        color: #333;
+        margin: 10px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        display: block;
+    }
+    .my_table {
+        font-family: 'Monaco';
+        color: #333;
+        .em-2 {
+            text-indent: 2em;
+        }
+        .em-3 {
+            text-indent: 3em;
+        }
+        .annotate {
+            color: #3da70d;
+            font-size: 80%;
+            margin-left: 20px;
+        }
+        .li {
+            padding: 10px;
+            border: 1px dashed #ccc;
+            margin-bottom: 10px;
+            .gh_arrow_r {
+                color: #c7254e;
+                margin-right: 10px;
+            }
+            .code {
+                padding: 2px 4px;
+                font-size: 90%;
+                color: #c7254e;
+                background-color: #f9f2f4;
+                border-radius: 4px;
+                margin-top: 5px;
+                display: inline-block;
+            }
+        }
+    }
+
+}

@@ -9,6 +9,7 @@ class Home extends Component {
     titleArr: [
       { title: 'React生命周期有哪些？', type: 'part1' },
       { title: 'ReactDOM.render 干了什么？', type: 'part2' },
+      { title: 'Component 与 PureComponent源码分析', type: 'part3' },
     ],
   };
   dateFormat = () => {
