@@ -4,8 +4,7 @@ import Article from './../Article';
 
 class Home extends Component {
   state = {
-    part: '',
-    activePart: 'part1',
+    activePart: 'part2',
     titleArr: [
       { title: 'React生命周期有哪些？', type: 'part1' },
       { title: 'ReactDOM.render 干了什么？', type: 'part2' },
@@ -26,11 +25,11 @@ class Home extends Component {
     alert('待开发')
   }
   JumpTo(where) {
-    this.setState({ part: where, activePart: where });
+    this.setState({ activePart: where });
   }
   render() {
     const { year, md, time } = this.dateFormat();
-    const { part, titleArr, activePart } = this.state;
+    const { titleArr, activePart } = this.state;
     return (
       <div className="source">
         <div className="topNav">
@@ -63,7 +62,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="content_article">
-            <Article part={part}/>
+            <Article part={activePart}/>
           </div>
           <div className="heart-beat"/>
         </div>

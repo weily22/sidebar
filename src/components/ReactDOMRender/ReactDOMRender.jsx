@@ -5,6 +5,7 @@ import bImg from './../../assets/b.jpg';
 import b2Img from './../../assets/b2.jpg';
 import cImg from './../../assets/c.jpg';
 
+const symArr = ['{', '}', '{}'];
 class ReactDOMRender extends Component {
   state = {
     value: 'Type some *markdown* here!',
@@ -27,9 +28,10 @@ class ReactDOMRender extends Component {
             <i className="iconfont gh_arrow_r" />
             legacyRenderSubtreeIntoContainer(parentComponent, children, container, forceHydrate, callback)
             <span className="annotate">//参数：null, (&lt;App />, Root, false, undefined)</span>
-            <p className="th">这个函数干了两件事：(针对于初始化的时候，!root的条件下)</p>
+            <p className="th">这个函数干了三件事：(针对于初始化的时候，!root的条件下)</p>
             <p>1. 创建fiberRoot</p>
-            <p>2. return getPublicRootInstance(fiberRoot);</p>
+            <p>2. updateContainer</p>
+            <p>3. return getPublicRootInstance(fiberRoot);</p>
           </li>
           <li>
             <i className="iconfont gh_arrow_r" />
@@ -100,6 +102,19 @@ class ReactDOMRender extends Component {
             <p>最后的最后，return root</p>
           </li>
           {/*<li>①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳</li>*/}
+          <li>
+            <i className="iconfont gh_arrow_r" />
+            updateContainer(element, container, parentComponent, callback) <span className="annotate">// 参数：&lt;App />, fiberRoot, null, undefined</span>
+            <code>
+              <p>unbatchedUpdates(() => {symArr[0]} <span className="annotate">// Initial mount should not be batched.</span></p>
+              <p className="em-2">updateContainer(element, container, parentComponent, callback)</p>
+              <p>});</p>
+            </code>
+            <p className="ph">updateContainer内部做的事：<span className="annotate">// 后续章节详细讲解</span></p>
+            <p>1. enqueueUpdate(current, update);</p>
+            <p>2. scheduleWork(current, expirationTime);</p>
+            <p>3. return expirationTime;</p>
+          </li>
           <li>
             <i className="iconfont gh_arrow_r" />getPublicRootInstance(container) <span className="annotate">// 参数： fiberRoot</span>
             <p>分析源码</p>
