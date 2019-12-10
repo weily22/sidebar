@@ -15,7 +15,7 @@ class Article extends Component {
       case 'part3':
         return <APureComponent />;
       default:
-        return <APureComponent />;
+        return <LifeCycle />;
     }
   }
   render() {
