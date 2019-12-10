@@ -1,39 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b79d45964b63b08e903904c4ecb0dfa",
+    "revision": "e7571c9cd1d983a5da5251e9bc77e698",
     "url": "./index.html"
   },
   {
-    "revision": "7d95b241bb0c7c75ac9d",
-    "url": "./static/css/main.22a77f0e.chunk.css"
+    "revision": "60129ab95408c6a10b06",
+    "url": "./static/css/main.ea1411f4.chunk.css"
   },
   {
     "revision": "a73654ce582479352a23",
     "url": "./static/js/2.2f209dc4.chunk.js"
   },
   {
-    "revision": "7d95b241bb0c7c75ac9d",
-    "url": "./static/js/main.95b5b46a.chunk.js"
+    "revision": "60129ab95408c6a10b06",
+    "url": "./static/js/main.d0561688.chunk.js"
   },
   {
     "revision": "bdda82fc5a54f4d89ba8",
     "url": "./static/js/runtime-main.dd4f7c96.js"
   },
   {
-    "revision": "15406419f73436c28b7e7684d6e3f346",
-    "url": "./static/media/Monaco.15406419.ttf"
-  },
-  {
-    "revision": "8c4a4f87d1b965f3b77311dbe779308b",
-    "url": "./static/media/NotoSansHans-Medium.8c4a4f87.ttf"
-  },
-  {
     "revision": "a406d1ae4db83f2b48a8d44096eebce6",
     "url": "./static/media/NotoSansHans-Medium.a406d1ae.woff"
-  },
-  {
-    "revision": "598ba88cbc3284bececc332005f6e176",
-    "url": "./static/media/Politica-Regular.598ba88c.ttf"
   },
   {
     "revision": "ffcc816ac0198eacc98cf64200c947e1",
@@ -54,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cd3f2c17d2b74e4bd0d8c1c02f04dff4",
     "url": "./static/media/c.cd3f2c17.jpg"
+  },
+  {
+    "revision": "497bc4eb72afd1194ff3bd5a2d11700f",
+    "url": "./static/media/monaco.497bc4eb.woff"
   }
 ]);
