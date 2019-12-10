@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.af985eb0.chunk.css",
-    "main.js": "./static/js/main.d71a260e.chunk.js",
-    "main.js.map": "./static/js/main.d71a260e.chunk.js.map",
+    "main.css": "./static/css/main.22a77f0e.chunk.css",
+    "main.js": "./static/js/main.b0853794.chunk.js",
+    "main.js.map": "./static/js/main.b0853794.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.dd4f7c96.js",
     "runtime-main.js.map": "./static/js/runtime-main.dd4f7c96.js.map",
-    "static/js/2.67546c31.chunk.js": "./static/js/2.67546c31.chunk.js",
-    "static/js/2.67546c31.chunk.js.map": "./static/js/2.67546c31.chunk.js.map",
+    "static/js/2.2f209dc4.chunk.js": "./static/js/2.2f209dc4.chunk.js",
+    "static/js/2.2f209dc4.chunk.js.map": "./static/js/2.2f209dc4.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.6e1bab82d92afd775d85ea82e9248241.js": "./precache-manifest.6e1bab82d92afd775d85ea82e9248241.js",
+    "precache-manifest.a08cccb4734d05cf2a8192aa3bb83c97.js": "./precache-manifest.a08cccb4734d05cf2a8192aa3bb83c97.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.af985eb0.chunk.css.map": "./static/css/main.af985eb0.chunk.css.map",
+    "static/css/main.22a77f0e.chunk.css.map": "./static/css/main.22a77f0e.chunk.css.map",
     "static/media/Home.scss": "./static/media/Politica-Regular.ffcc816a.woff",
     "static/media/a.jpg": "./static/media/a.2d701643.jpg",
     "static/media/b.jpg": "./static/media/b.42bcdccb.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.dd4f7c96.js",
-    "static/js/2.67546c31.chunk.js",
-    "static/css/main.af985eb0.chunk.css",
-    "static/js/main.d71a260e.chunk.js"
+    "static/js/2.2f209dc4.chunk.js",
+    "static/css/main.22a77f0e.chunk.css",
+    "static/js/main.b0853794.chunk.js"
   ]
 }
