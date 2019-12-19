@@ -1,7 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
+```
 In the project directory, you can run:
 
 ### `npm start`
@@ -11,58 +8,131 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### React 源码中经常出现的一些自定义类型的定义如下：
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+====   React版本 16.12.0   =====
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+所有包目录都在packages下
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+====================================== *DOMContainer* ================================
 
-### `npm run eject`
+> type **DOMContainer**
+>
+> 出处：react-dom/src/client/ReactDOM.js
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+定义类型为：
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```js
+|(Element & {
+    _reactRootContainer: ?_ReactRoot,
+    _reactHasBeenPassedToCreateRootDEV: ?boolean,
+ })   
+|(Document & {
+    _reactRootContainer: ?_ReactRoot,
+    _reactHasBeenPassedToCreateRootDEV: ?boolean,
+})
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+======================================= *_ReactRoot* ==================================
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> type **_ReactRoot**
+>
+> 出处：react-dom/src/client/ReactDOM.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+定义类型为：
 
-### Code Splitting
+```javascript
+{
+   render(children: ReactNodeList， callback),
+   unmount(callback),
+   _internalRoot: FiberRoot
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+======================================= *FiberRoot* ==================================
 
-### Making a Progressive Web App
+> type **FiberRoot**
+>
+> 出处：react-reconciler/src/ReactFiberRoot.js
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+定义类型为：
 
-### Advanced Configuration
+```jsx
+{
+    tag: RootTag,
+    containerInfo: any,
+    pendingChildren: any,
+    current: Fiber,
+    pingCache: | WeakMap<Thenable, Set<ExpirationTime>>
+               | Map<Thenable, Set<ExpirationTime>>
+        	   | null,
+    finishedExpirationTime: ExpirationTime,
+    // A finished work-in-progress HostRoot that's ready to be committed.
+    finishedWork: Fiber | null,
+    // Timeout handle returned by setTimeout. Used to cancel a pending timeout, if
+    // it's superseded by a new one.
+    timeoutHandle: TimeoutHandle | NoTimeout,
+    // Top context object, used by renderSubtreeIntoContainer
+    context: Object | null,
+    pendingContext: Object | null,
+    // Determines if we should attempt to hydrate on the initial mount
+    +hydrate: boolean,
+    // Node returned by Scheduler.scheduleCallback
+    callbackNode: *,
+    // Expiration of the callback associated with this root
+    callbackExpirationTime: ExpirationTime,
+    // Priority of the callback associated with this root
+    callbackPriority: ReactPriorityLevel,
+    // The earliest pending expiration time that exists in the tree
+    firstPendingTime: ExpirationTime,
+    // The earliest suspended expiration time that exists in the tree
+    firstSuspendedTime: ExpirationTime,
+    // The latest suspended expiration time that exists in the tree
+    lastSuspendedTime: ExpirationTime,
+    // The next known expiration time after the suspended range
+    nextKnownPendingLevel: ExpirationTime,
+    // The latest time at which a suspended component pinged the root to
+    // render again
+    lastPingedTime: ExpirationTime,
+    // The following attributes are only used by interaction tracing builds.
+    // They enable interactions to be associated with their async work,
+    // And expose interaction metadata to the React DevTools Profiler plugin.
+    // Note that these attributes are only defined when the enableSchedulerTracing flag is    enabled.
+    interactionThreadID: number,
+    memoizedInteractions: Set<Interaction>,
+    pendingInteractionMap: PendingInteractionMap,
+    // The follow fields are only used by enableSuspenseCallback for hydration.
+    hydrationCallbacks: null | SuspenseHydrationCallbacks,
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+======================================= *RootOptions* ==================================
 
-### `npm run build` fails to minify
+> type **RootOptions**
+>
+> 出处：react-reconciler/src/ReactDOM.js
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+定义类型为：
+
+```js
+{
+   hydrate?: boolean,
+   hydrationOptions?: {
+    onHydrated?: (suspenseNode: Comment) => void,
+    onDeleted?: (suspenseNode: Comment) => void,
+  },
+}
+```
+
+
+
