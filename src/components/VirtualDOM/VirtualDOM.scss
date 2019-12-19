@@ -1,0 +1,33 @@
+.virtual_dom {
+  .con {
+    font-family: 'Monaco';
+
+    .concept {
+      background-color: #f0f0f0;
+      width: 800px;
+      padding: 8px 10px;
+      color: #000;
+      margin-bottom: 10px;
+      border-radius: .5em;
+      position: relative;
+      &:after {
+        content: '--摘自React文档';
+        position: absolute;
+        bottom: 4px;
+        color: green;
+        right: 15px;
+        font-size: 12px;
+      }
+    }
+    code {
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    p {
+      margin: 10px 0;
+      color: #333;
+    }
+  }
+}

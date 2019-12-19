@@ -106,6 +106,16 @@
           z-index: -1;
         }
       }
+      .doc {
+        margin-bottom: 15px;
+        a {
+          color: green;
+          text-decoration: underline;
+          &:hover {
+            color: darkgreen;
+          }
+        }
+      }
       .year {
         font-size: 20px;
       }
