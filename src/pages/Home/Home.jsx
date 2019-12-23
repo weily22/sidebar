@@ -34,9 +34,7 @@ class Home extends Component {
     return (
       <div className="source">
         <div className="topNav">
-          <div>
-            <a href="https://github.com/weily22/sidebar">小米江</a>
-          </div>
+          <div><a href="https://github.com/weily22/sidebar">小米江</a></div>
           <div className="menu">
             {
               titleArr.map(({ title, type }, index) => (
